@@ -1,0 +1,13 @@
+<table style="border: 1px; background-color: aqua">
+  <tr bordercolor="red">
+    <td style="vertical-align: center"><a [routerLink]="['Home']">Home</a></td>
+    <td><a [routerLink]="['Customer/Add']">Customer</a></td>
+    <!-- Customet comes from Main Routes and Add comes from Child Routes  -->
+    <td><a [routerLink]="['Supplier/Add']">Supplier</a></td>
+    <td>
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </td>
+  </tr>
+</table>
